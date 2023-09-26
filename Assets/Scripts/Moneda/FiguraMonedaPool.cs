@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonedaPool : MonoBehaviour
+public class FiguraMonedaPool : MonoBehaviour
 {
     public GameObject[] monedaPrefab; // Prefab del enemigo que deseas instanciar
     public int poolSize = 5; // Tamaño del pool inicial
@@ -11,7 +10,7 @@ public class MonedaPool : MonoBehaviour
 
     private void Awake()
     {
-        monedaPool = new GameObject[poolSize];
+       monedaPool = new GameObject[poolSize];
 
         for (int i = 0; i < poolSize; i++)
         {

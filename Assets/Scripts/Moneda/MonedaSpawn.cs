@@ -26,7 +26,7 @@ public class MonedaSpawn : MonoBehaviour
         while (true)
         {
             // Obtén un basura del pool
-            GameObject moneda = MonedaPool.GetMoneda();
+            GameObject moneda = FiguraMonedaPool.GetMoneda();
             if (moneda != null)
             {
                 // Establece la posición de inicio dentro del rango especificado en el eje Y

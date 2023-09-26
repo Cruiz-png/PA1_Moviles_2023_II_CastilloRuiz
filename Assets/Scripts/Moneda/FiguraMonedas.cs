@@ -9,6 +9,7 @@ public class FiguraMonedas : MonoBehaviour
     public float leftLimit = -13f; // Límite izquierdo donde el enemigo se devuelve al pool
     public float respawnTime = 5f; // Tiempo en segundos para reaparecer después de colisionar
 
+    public GameObject[] monedas;
     private Rigidbody2D rb;
     private bool isRespawning = false;
     private float respawnTimer = 0f;
@@ -30,7 +31,7 @@ public class FiguraMonedas : MonoBehaviour
         if (transform.position.x <= leftLimit)
         {
             // Devuelve el enemigo al pool
-            MonedaPool.ReturnMonedaToPool(gameObject);
+            FiguraMonedaPool.ReturnMonedaToPool(gameObject);
         }
 
         // Si está en proceso de reaparecer, cuenta el tiempo
