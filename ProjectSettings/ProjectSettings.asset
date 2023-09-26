@@ -855,8 +855,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: PA1_Moviles_2023_II_CastilloRuiz
-  metroPackageVersion: 
+  metroPackageName: PA1Moviles2023IICastilloRuiz
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -864,7 +864,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: PA1_Moviles_2023_II_CastilloRuiz
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: PA1_Moviles_2023_II_CastilloRuiz
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
