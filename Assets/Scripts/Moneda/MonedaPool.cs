@@ -10,18 +10,13 @@ public class MonedaPool : MonoBehaviour
 
     private void Awake()
     {
-        // Inicializa la lista del pool
-        monedaPool = new GameObject[poolSize];
+       monedaPool = new GameObject[poolSize];
 
-        // Llena el pool con objetos basura inactivos
         for (int i = 0; i < poolSize; i++)
         {
-            // Instancia un basura a partir del prefab
             GameObject moneda = Instantiate(monedaPrefab[Random.Range(0, monedaPrefab.Length)]);
-            // Desactiva el basura para que no sea visible ni interactivo
             moneda.SetActive(false);
 
-            // Agrega la moneda al arreglo del pool
             monedaPool[i] = moneda;
         }
     }
