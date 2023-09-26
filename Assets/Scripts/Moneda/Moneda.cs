@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Moneda : MonoBehaviour
 {
-
     public void Start()
     {
         gameObject.SetActive(true);
@@ -21,3 +20,4 @@ public class Moneda : MonoBehaviour
         }
     }
 }
+
