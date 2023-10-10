@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BackgroundScroll : MonoBehaviour
+public class VER : MonoBehaviour
 {
     public float scrollSpeed = 1.0f; // Velocidad de desplazamiento del offset
     private Material material;

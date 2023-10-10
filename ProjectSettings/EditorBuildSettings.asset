@@ -6,10 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NoTocar/Scenes/SampleScene.unity
+    path: Assets/Scenes/Menu/menu.unity
+    guid: a43d5e10a24547243bf5956c5141adf8
+  - enabled: 1
+    path: Assets/Scenes/Game/Game.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
-    path: Assets/ScenaResultados/Resultados.unity
+    path: Assets/Scenes/SeleccionarPersonaje/Seleccionar.unity
+    guid: 41a47cba3a292fa42acaff3cb5ccfff9
+  - enabled: 1
+    path: Assets/Scenes/ScenaResultados/Resultados.unity
     guid: 1bab920430f279f47a91b19fac1eb735
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: fe10368865162684b9f6e4305fd2fc85, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0911f5f774381304cbd4e19723b69fa3, type: 2}

@@ -1,4 +1,7 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,6 +13,8 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private bool isRespawning = false;
     private float respawnTimer = 0f;
+    public Text messagePanel; // Asigna un GameObject con un componente Text para mostrar el mensaje
+
 
     private void Start()
     {
@@ -52,8 +57,22 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            
-            // Inicia el proceso de reaparición cuando colisiona con el jugador
+            // Detiene todo en la escena
+            Time.timeScale = 0f;
+
+            // Espera 2 segundos antes de cargar la escena "Resultados"
+            StartCoroutine(WaitAndLoadResultsScene(2f));
         }
+    }
+
+    private IEnumerator WaitAndLoadResultsScene(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+
+        // Carga la escena "Resultados"
+        SceneManager.LoadScene("Resultados");
+
+        // Reanuda el tiempo en la escena
+        Time.timeScale = 1f;
     }
 }
