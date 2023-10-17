@@ -70,9 +70,8 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSecondsRealtime(delay);
 
         // Carga la escena "Resultados"
-        SceneManager.LoadScene("Resultados");
+        SceneGlobalManager.Instance.LoadSceneAsync("Resultados", LoadSceneMode.Additive);
 
-        // Reanuda el tiempo en la escena
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
     }
 }

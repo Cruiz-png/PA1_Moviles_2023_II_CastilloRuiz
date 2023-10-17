@@ -14,8 +14,8 @@ public class MiniMenu : MonoBehaviour
     // Llama a esta función para volver al menú principal
     public void ReturnToMainMenu()
     {
-
-        // Carga la escena del menú principal (ajusta el nombre de la escena según corresponda)
+        SceneManager.UnloadSceneAsync("Game");
+        //SceneManager.UnloadSceneAsync("Resultados");
         SceneManager.LoadScene(sceneName);
     }
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09293b2a819c89142af8688ccac8e161, type: 3}
   m_Name: Sprites
   m_EditorClassIdentifier: 
+  selectedCharacterIndex: 0
   characterSprites:
   - {fileID: 21300000, guid: 14b9da0cb11f6f6449fa6ca70cb91d35, type: 3}
   - {fileID: 21300000, guid: f74f56f593c80cb40ad4ba32401c1f70, type: 3}

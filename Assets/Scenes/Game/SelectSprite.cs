@@ -5,6 +5,10 @@ public class SelectSprite : MonoBehaviour
     public CharacterData characterData; // Asigna el ScriptableObject en el Inspector
     private SpriteRenderer spriteRenderer;
 
+    public void Awake()
+    {
+        Time.timeScale = 1f;
+    }
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

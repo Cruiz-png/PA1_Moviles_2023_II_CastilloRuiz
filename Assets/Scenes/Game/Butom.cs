@@ -15,6 +15,7 @@ public class Butom : MonoBehaviour
     private void LoadSceneOnClick()
     {
         // Carga la escena especificada por nombre
+        SceneManager.UnloadSceneAsync("Game");
         SceneManager.LoadScene(sceneName);
     }
 }

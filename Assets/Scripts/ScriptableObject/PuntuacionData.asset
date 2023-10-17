@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb997eb10dae2947b3c088cd9e35b14, type: 3}
   m_Name: PuntuacionData
   m_EditorClassIdentifier: 
-  score: 330
-  highScore: 0
+  score: 55
+  highScoresList:
+  - 81
+  - 80
+  - 55
+  - 50
+  - 50
+  - 30
+  - 22
+  - 22
+  - 21
+  - 20
